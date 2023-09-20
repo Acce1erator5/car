@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Page</title>
+</head>
+<body>
+    <form method="post" action="">
+        {% csrf_token %}
+        <div class="mb-3" style="margin-top: 50px;">
+            <label for="car_stamp" class="form-label">Stamp</label>
+            <input name="car_stamp" type="text" class="form-control" id="car_stamp">
+        </div>
+
+        <div class="mb-3" >
+            <label for="car_release" class="form-label">Release</label>
+            <input name="car_release" type="text" class="form-control" id="car_release">
+        </div>
+
+        <div class="mb-3" >
+            <label for="car_color" class="form-label">Color</label>
+            <input name="car_color" type="text" class="form-control" id="car_color">
+        </div>
+
+        <div class="mb-3" >
+            <label for="car_mileage" class="form-label">Mileage</label>
+            <input name="car_mileage" type="text" class="form-control" id="car_mileage">
+        </div>
+
+        <div class="mb-3" >
+            <label for="car_price" class="form-label">Price</label>
+            <input name="car_price" type="text" class="form-control" id="car_price">
+        </div>
+        <button name="add_button" type="submit" class="btn btn-primary">Add car</button>
+    </form>
+
+
+
+
+</body>
+</html>
